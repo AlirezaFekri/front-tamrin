@@ -1,0 +1,57 @@
+:root{
+    --primary: #6750a4;
+    --primarylight: rgba(103, 80, 164,.3);
+    --tonal : #E8DEF8;
+    --outline: #fffbfe;
+    --outline-color: #79747E;
+}
+
+.btn{
+    --height : 40px;
+    /* استفاده به جای roboto medium */
+    font-family: Roboto, sans-serif; 
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: .1em;
+    font-weight: 500;
+    height: var(--height);
+    border-radius: calc(var(--height)/2);
+    padding: 0 24px;
+    text-align: center;
+
+}
+
+.btn > *{
+    vertical-align: middle;
+}
+
+.btn.filled{
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+
+}
+
+.btn.tonal{
+    background-color: var(--tonal);
+    color: #1E192B;
+    border: none;
+}
+
+.btn.outlined{
+    background-color: var(--outline);
+     border-color: var(--outline-color);
+    outline-width: 1px; 
+    color: var(--primary); 
+}
+
+.btn.text{
+    color: var(--primary);
+    padding: 0 12;
+    border: none;
+}
+.btn.text:focus{
+    background-color: var(--primarylight);
+    color: var(--primary);
+    border: none;
+}
