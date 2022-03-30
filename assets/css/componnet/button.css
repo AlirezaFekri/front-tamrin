@@ -10,7 +10,7 @@
     --height : 40px;
     /* استفاده به جای roboto medium */
     font-family: Roboto, sans-serif; 
-    line-height: 20px;
+    line-height: var(--height)/2;
     font-size: 14px;
     letter-spacing: .1em;
     font-weight: 500;
@@ -18,7 +18,11 @@
     border-radius: calc(var(--height)/2);
     padding: 0 24px;
     text-align: center;
+}
 
+i {
+    font-size: 18px;
+    padding-right: 8px;
 }
 
 .btn > *{
@@ -54,4 +58,11 @@
     background-color: var(--primarylight);
     color: var(--primary);
     border: none;
+}
+
+.btn.filled.icon,.btn.tonal.icon,.btn.outlined.icon{
+    padding-left: 16px;
+}
+.btn.text.icon {
+padding: 0 16px 0 12px
 }
