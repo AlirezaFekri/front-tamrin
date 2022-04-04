@@ -46,7 +46,7 @@
 
 .btn.text{
     color: var(--primary);
-    padding: 0 12;
+    padding: 0 12px;
     border: none;
 }
 .btn.text:focus{
