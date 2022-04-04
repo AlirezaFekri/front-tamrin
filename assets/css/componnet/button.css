@@ -20,11 +20,6 @@
     text-align: center;
 }
 
-i {
-    font-size: 18px;
-    padding-right: 8px;
-}
-
 .btn > *{
     vertical-align: middle;
 }
@@ -59,10 +54,15 @@ i {
     color: var(--primary);
     border: none;
 }
+.btn.text.icon {
+    padding: 0 16px 0 12px
+    }
 
 .btn.filled.icon,.btn.tonal.icon,.btn.outlined.icon{
     padding-left: 16px;
 }
-.btn.text.icon {
-padding: 0 16px 0 12px
+
+.ic {
+    font-size: 18px;
+    padding-right: 8px;
 }
