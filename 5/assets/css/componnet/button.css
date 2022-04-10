@@ -48,6 +48,7 @@
     color: var(--primary);
     padding: 0 12px;
     border: none;
+    background: none;
 }
 .btn.text:focus{
     background-color: var(--primarylight);
