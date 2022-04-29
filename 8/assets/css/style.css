@@ -1,0 +1,7 @@
+
+@import url("componnet/card.css");
+@import url("./layout/layout.css");
+@import url("componnet/button.css");
+.centeral{
+    text-align: center;
+}
