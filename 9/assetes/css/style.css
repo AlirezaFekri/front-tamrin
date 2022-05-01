@@ -1,0 +1,10 @@
+@import url("./componenet/card.css");
+@import url("./componenet/button.css");
+@import url("./layout/grid.css");
+*{
+    direction: rtl;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}

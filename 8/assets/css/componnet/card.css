@@ -114,7 +114,7 @@
         var(--opacity-focus),var(--opacity-focus)
         );
 }
-img{
+.card-image-top{
     max-width: 100%;
 }
 div a {

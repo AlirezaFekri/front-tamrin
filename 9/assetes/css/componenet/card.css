@@ -1,0 +1,20 @@
+:root{
+    --surface: #FFFBFE;
+}
+.card-body{
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.card-fill{
+  padding: 10px;
+}
+.card-text,.card-title,.card-price{
+  margin: 10px;
+}
+.card-title-image{
+  margin-left: 10px;
+}
+.card-button{
+margin-right: 100px;
+}
