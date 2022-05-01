@@ -15,20 +15,32 @@
         width: 30%;
         height: 100%;
     }
+    .card-button{
+        display: inline-block;
+        margin-right: 30%;
+      }
     
 }
 @media screen and (min-width:481px) {
     .grid-sm-2{
         grid-template-columns: repeat(2, 1fr);
     }
+    .card-button{
+        display: inline-block;
+        margin-right: 20%;
+      }
 }
 @media screen and (min-width:1025px) {
     .grid-larg-4{
         grid-template-columns: repeat(3, 1fr);
     }
     .card-title-image{
+
         height: initial;
         width: 10000px;
         max-width: 100%;
+    }
+    .card-button{
+        margin-right: 0;
     }
 }
