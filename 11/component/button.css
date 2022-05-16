@@ -1,0 +1,194 @@
+:root{
+    --primary: #6750a4;
+    --on-primary: #fff;
+    --Secondary-container : #E8DEF8;
+    --surface: #fffbfe;
+    --outline: #79747E;
+    --on-surface : #1C1B1F;
+    --on-secondary-container :#1E192B;
+
+    --opacity-disabled: rgba(255,255,255, .88);
+    --opacity-hoverd : rgba(255,255,255 ,.08);
+    --opacity-focus-active: rgba(255,255,255,.12);
+    --opacity-fucus-activ-outex : rgba(255,255,255, .92);
+}
+
+.btn{
+    --height : 40px;
+    /* استفاده به جای roboto medium */
+    font-family: Roboto, sans-serif; 
+    line-height: var(--height)/2;
+    font-size: 14px;
+    letter-spacing: .1em;
+    font-weight: 500;
+    height: var(--height);
+    border-radius: calc(var(--height)/2);
+    padding: 0 24px;
+    text-align: center;
+    margin: 8px 0 16px 0;
+    display: inline-block;
+    align-items: normal;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn > *{
+    vertical-align: middle;
+}
+
+/* Buttons design */
+.btn.filled{
+    background-color: var(--primary);
+    color: var(--on-primary);
+    border: none;
+    
+}
+
+.btn.tonal{
+    background-color: var(--Secondary-container);
+    color: var(--on-secondary-container);
+    border: none;
+}
+
+.btn.outlined{
+    background-color: var(--surface);
+     border-color: var(--outline);
+    outline-width: 1px; 
+    color: var(--primary); 
+}
+
+.btn.text{
+    color: var(--primary);
+    padding: 0 12px;
+    border: none;
+    background: none;
+}
+
+/* disabled buttons */
+.btn:disabled{
+    cursor: default;
+    opacity: 38%;
+}
+.btn.filled:disabled, .btn.tonal:disabled{
+    background: 
+    linear-gradient(
+        var(--opacity-disabled),
+        var(--opacity-disabled)), 
+    var(--on-surface);
+    color: var(--on-surface);
+}
+.btn.outlined:disabled{
+    outline-color: 
+        linear-gradient(
+            var(--opacity-disabled) ,
+            var(--opacity-disabled)), 
+        var(--on-surface)
+    ;
+         color: var(--on-surface);
+}
+.btn.text:disabled{
+    color: var(--on-surface);
+}
+
+/* Hover Buttons */
+.btn.filled:enabled:hover{
+    background: 
+    linear-gradient(
+       var(--opacity-hoverd),
+       var(--opacity-hoverd)
+    )
+    ,var(--primary)
+    ;
+    color: var(--on-primary);
+}
+.btn.tonal:enabled:hover{
+    background: 
+    linear-gradient(
+       var(--opacity-hoverd),
+       var(--opacity-hoverd)
+    )
+    ,var(--Secondary-container)
+    ;
+    color: var(--on-secondary-container);
+}
+.btn.outlined:enabled:hover{
+    border-color: var(--outline);
+    background: 
+    linear-gradient(
+        var(--opacity-fucus-activ-outex),
+        var(--opacity-fucus-activ-outex)),
+        var(--primary)
+    ;
+    color: var(--primary);
+}
+.btn.text:enabled:hover{
+
+    background: 
+    linear-gradient(
+        var(--opacity-fucus-activ-outex),
+        var(--opacity-fucus-activ-outex)
+    ),
+    var(--primary);
+    color: var(--primary);
+
+}
+
+/* Focused Buttons &  Pressed(Active) Buttons  */
+.btn.filled:enabled:focus, .btn.filled:enabled:active{
+    background:
+    linear-gradient(
+        var(--opacity-focus-active),
+        var(--opacity-focus-active)
+    ), var(--primary)
+    ;
+    color: var(--on-primary);
+}
+.btn.tonal:enabled:focus, .btn.tonal:enabled:active {
+    background: 
+    linear-gradient(
+       var(--opacity-focus-active),
+       var(--opacity-focus-active)
+    )
+    ,var(--Secondary-container)
+    ;
+    color: var(--on-secondary-container);
+}
+.btn.outlined:enabled:focus{
+    border-color: var(--primary);
+    background: 
+    linear-gradient(
+        var(--opacity-fucus-activ-outex),
+        var(--opacity-fucus-activ-outex)),
+        var(--primary)
+    ;
+    color: var(--primary);
+}
+.btn.outlined:enabled:active{
+    border-color: var(--outline);
+    background: linear-gradient(
+        var(--opacity-disabled),
+        var(--opacity-disabled)),
+        var(--primary)
+    ;
+    color: var(--primary);
+}
+.btn.text:enabled:focus{
+    background: 
+    linear-gradient(
+        var(--opacity-fucus-activ-outex),
+        var(--opacity-fucus-activ-outex)
+    ),
+    var(--primary);
+    color: var(--primary);
+}
+.btn.text:enabled:active {
+    background: 
+    linear-gradient(
+        var(--opacity-disabled),
+        var(--opacity-disabled)
+    ),
+    var(--primary);
+    color:  var(--primary);
+}
+
+
